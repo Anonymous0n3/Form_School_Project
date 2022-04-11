@@ -9,4 +9,11 @@ public class Values {
     public static void loadForms(){
         logic.loadForms();
     }
+    public static String[] getForm(String value){
+        for (String[] form:logic.getFormsWhole()) {
+            form[0].equals(value);
+            return form;
+        }
+        return null;
+    }
 }

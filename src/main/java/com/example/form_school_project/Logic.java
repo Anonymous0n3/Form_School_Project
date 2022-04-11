@@ -31,4 +31,8 @@ public class Logic {
         }
         return formNames;
     }
+
+    public ArrayList<String[]> getFormsWhole(){
+        return forms;
+    }
 }

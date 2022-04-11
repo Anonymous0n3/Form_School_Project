@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3839eb9c-7ccf-4ce7-bc70-26bd44eb143e" name="Changes" comment="" />
+    <list default="true" id="3839eb9c-7ccf-4ce7-bc70-26bd44eb143e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/Values.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/Values.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/config/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/config/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/FillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/FillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Fill_Screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Fill_Screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Main.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,15 +27,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="27evKGb05pxGL2FnrCLzF08A0bS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SchoolFX" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,5 +82,19 @@
       <updated>1649693302012</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
