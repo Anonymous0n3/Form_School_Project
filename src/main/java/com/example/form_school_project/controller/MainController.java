@@ -46,7 +46,7 @@ public class MainController implements Initializable {
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
 
-            stage.setUserData(formWhole[i]);
+            stage.setUserData(formWhole);
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
             stage.showAndWait();
