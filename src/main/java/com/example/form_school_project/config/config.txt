@@ -1,2 +1,2 @@
-Standart Form;Name
+Standart Form;Name;A;B;C
 Standart Form v2;Name;Surname;Age;Email;Placeholder

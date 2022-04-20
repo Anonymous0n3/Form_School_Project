@@ -2,6 +2,7 @@ package com.example.form_school_project.controller;
 
 import com.example.form_school_project.Logic;
 import com.example.form_school_project.Values;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,6 +15,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.EventListener;
 import java.util.ResourceBundle;
 
@@ -41,15 +43,15 @@ public class MainController implements Initializable {
 
     @FXML
     private Button end;
+    int currentRound = 0;
+    String[] formWhole;
+    FileWriter fileWriter;
 
     //Enables Fill Form button
     public void disableOff(ActionEvent event) {
         fill.setDisable(false);
     }
 
-    public void submitPressed(){
-        run = false;
-    }
 
     private void switchSceneFill(){
         formBox.setVisible(false);
@@ -77,21 +79,29 @@ public class MainController implements Initializable {
 
         switchSceneFill();
 
-        String[] formWhole = Values.getForm(formBox.getValue());
+        formWhole = Values.getForm(formBox.getValue());
 
         File file = new File("placeholder.txt");
         FileWriter fileWriter = new FileWriter("placeholder.txt");
+        currentRound = 1;
+        setFormData();
+    }
 
-        for (int i = 1; i <formWhole.length; i++) {
-            question.setText(formWhole[i]);
-
-
-
-            fileWriter.write(formWhole[i] + ": " + fillField.getText() + "\n");
+    private void setFormData() {
+        if (currentRound < formWhole.length) {
+            question.setText(formWhole[currentRound]);
+        } else {
+            switchSceneMain();
         }
+    }
+
+    public void submitPressed() throws IOException {
+        fileWriter = new FileWriter("placeholder.txt", true);
+        fileWriter.write(formWhole[currentRound] + ": " + fillField.getText() + "\n");
         fileWriter.flush();
         fileWriter.close();
-        switchSceneMain();
+        currentRound++;
+        setFormData();
     }
 
     private Logic logic = Values.getLogic();
@@ -101,12 +111,16 @@ public class MainController implements Initializable {
     //What happens at the start
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (String s: logic.getForms()) {
+        for (String s : logic.getForms()) {
             formBox.getItems().add(s);
         }
 
         fillField.setVisible(false);
         question.setVisible(false);
         submit.setVisible(false);
+    }
+
+    public void endMyLife(ActionEvent actionEvent) {
+        System.exit(-1);
     }
 }
