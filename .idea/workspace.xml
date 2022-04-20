@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3839eb9c-7ccf-4ce7-bc70-26bd44eb143e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/FillController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Fill_Screen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/form_school_project/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,23 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1649701129753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="One screen only - because problems">
+      <created>1649751803070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649751803070</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Switching works" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switching works" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/form_school_project/controller/MainController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="One screen only - because problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="One screen only - because problems" />
   </component>
 </project>

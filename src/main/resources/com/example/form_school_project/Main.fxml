@@ -10,9 +10,12 @@
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="14.0" layoutY="60.0" text="Select Form" />
+      <Label fx:id="staticLabel" layoutX="14.0" layoutY="60.0" text="Select Form" />
       <ComboBox fx:id="formBox" layoutX="150.0" layoutY="56.0" onAction="#disableOff" prefWidth="150.0" />
       <Button fx:id="fill" disable="true" layoutX="245.0" layoutY="117.0" mnemonicParsing="false" onAction="#doForm" text="Fill Selected Form" />
-      <Button layoutX="250.0" layoutY="276.0" mnemonicParsing="false" text="End Application" />
+      <Button fx:id="end" layoutX="250.0" layoutY="276.0" mnemonicParsing="false" text="End Application" />
+      <TextField fx:id="fillField" layoutX="408.0" layoutY="188.0" />
+      <Label fx:id="question" layoutX="111.0" layoutY="205.0" text="Placeholder" />
+      <Button fx:id="submit" layoutX="457.0" layoutY="276.0" mnemonicParsing="false" onAction="#submitPressed" text="Submit" />
    </children>
 </AnchorPane>
