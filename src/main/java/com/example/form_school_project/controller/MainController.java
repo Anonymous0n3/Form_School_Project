@@ -52,13 +52,13 @@ public class MainController implements Initializable {
     //"Switches" to screen where you fill selected form
     private void switchSceneFill(){
 
-        //Makes unneeded componets invisible
+        //Makes unneeded components invisible
         formBox.setVisible(false);
         fill.setVisible(false);
         staticLabel.setVisible(false);
         end.setVisible(false);
 
-        //Makes needed componets visible
+        //Makes needed components visible
         fillField.setVisible(true);
         question.setVisible(true);
         submit.setVisible(true);
@@ -67,13 +67,13 @@ public class MainController implements Initializable {
     //"Switches" to select form screen
     private void switchSceneMain(){
 
-        //Makes needed componets visible
+        //Makes needed components visible
         formBox.setVisible(true);
         fill.setVisible(true);
         staticLabel.setVisible(true);
         end.setVisible(true);
 
-        //Makes unneeded componets invisible
+        //Makes unneeded components invisible
         fillField.setVisible(false);
         question.setVisible(false);
         submit.setVisible(false);
@@ -141,7 +141,7 @@ public class MainController implements Initializable {
         //Sets which file fileWriter writes into, saved on Desktop
         fileWriter = new FileWriter(System.getProperty("user.home") + "/Desktop/" + formBox.getValue() + " (" + fileNum + ")" + ".txt", true);
 
-        //Writes answers from user (can be NULL)
+        //Write answers from user (can be NULL)
         fileWriter.write(formWhole[currentRound] + ": " + fillField.getText() + "\n");
 
         //Writer writes all data to files and closes
@@ -172,7 +172,7 @@ public class MainController implements Initializable {
             formBox.getItems().add(s);
         }
 
-        //Makes unneeded componets invisible
+        //Makes unneeded components invisible
         fillField.setVisible(false);
         question.setVisible(false);
         submit.setVisible(false);
